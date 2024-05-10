@@ -484,7 +484,7 @@ h6 {
 # Global Footer
 --------------------------------------------------------------*/
 .footer {
-  --background-color: #0c0c0c;
+  --background-color: var(--azul-oscuro);
   --default-color: #ffffff;
   --default-color-rgb: 255, 255, 255;
   --heading-color: #f9f9f9;
@@ -495,7 +495,9 @@ h6 {
   padding-bottom: 50px;
   position: relative;
 }
-
+.footer a {
+  color: var(--amarillo);
+}
 .footer .footer-top {
   padding-top: 50px;
   border-top: 1px solid rgba(var(--default-color-rgb), 0.1);
@@ -542,8 +544,8 @@ h6 {
 }
 
 .footer .social-links a:hover {
-  color: var(--accent-color);
-  border-color: var(--accent-color);
+  color: var(--amarillo);
+  border-color: var(--amarillo);
 }
 
 .footer h4 {
@@ -761,8 +763,10 @@ h6 {
 }
 
 .scroll-top:hover {
-  background-color: rgba(var(--accent-color-rgb), 0.8);
-  color: var(--contrast-color);
+  background-color: var(--amarillo);
+}
+.scroll-top:hover i {
+  color: var(--azul-oscuro);
 }
 
 .scroll-top.active {
